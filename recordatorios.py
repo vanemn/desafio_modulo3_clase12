@@ -1,4 +1,4 @@
-#Lista de recordatorios  
+#lista de recordatorios  
 recordatorios = [  
     ['2021-01-01', '11:00', 'Levantarse y ejercitar'],  
     ['2021-01-02', '06:00', 'Empezar el año'],  
@@ -8,14 +8,15 @@ recordatorios = [
     ['2021-12-25', '00:00', 'Navidad'],  
     ['2021-12-31', '22:00', 'Cena de Año Nuevo'],   
 ]  
-# uso de funcion for para que cambue el feriado
+# uso de función for para que cambie el feriado
 for evento in recordatorios:  
     if evento[0] == '2021-07-15':  
         evento[0] = '2021-07-16'   
         break   
 fechas_a_eliminar = ['2021-05-01']  
 recordatorios = [evento for evento in recordatorios if evento[0] not in fechas_a_eliminar]  
-# Ordenar la lista por fecha y hora  
+
+# ordenar la lista por fecha y hora  
 recordatorios.sort(key=lambda x: (x[0], x[1]))  
   
 for evento in recordatorios:  
