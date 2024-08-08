@@ -15,3 +15,8 @@ for evento in recordatorios:
         break   
 fechas_a_eliminar = ['2021-05-01']  
 recordatorios = [evento for evento in recordatorios if evento[0] not in fechas_a_eliminar]  
+# Ordenar la lista por fecha y hora  
+recordatorios.sort(key=lambda x: (x[0], x[1]))  
+  
+for evento in recordatorios:  
+    print(evento)  
