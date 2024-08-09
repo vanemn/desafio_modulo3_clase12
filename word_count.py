@@ -1,3 +1,5 @@
+import sys
+
 def word_count(archivo):
     #Metodo para evaluar errores
     try:
@@ -19,7 +21,7 @@ def word_count(archivo):
         return(f'ocurrio un error: {e}')
 
 #Cargar ruta de archivo
-archivo = "lorem_ipsum.txt"
+archivo = sys.argv[1]
 #Mostrar resultado pasando variable a la funcion
 resultado = word_count(archivo)
 
