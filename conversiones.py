@@ -19,3 +19,13 @@ def main():
     except ValueError:
         print("Error: Los valores deben ser números.")
         sys.exit(1)
+
+    valor_sol, valor_peso_arg, valor_dolar = convertir_pesos(valor_pesos, tasa_sol, tasa_peso_arg, tasa_dolar)
+    
+    print(f"Los {valor_pesos} pesos equivalen a:")
+    print(f"{valor_sol:.1f} Soles")
+    print(f"{valor_peso_arg:.1f} Pesos Argentinos")
+    print(f"{valor_dolar:.1f} Dólares")
+
+if __name__ == "__main__":
+    main()
