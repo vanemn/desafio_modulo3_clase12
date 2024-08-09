@@ -1,105 +1,55 @@
-# Estructuras de datos y funciones (I)
+Sentencias condicionales e iterativas (II)
+Este compilado contiene tres proyectos que contemplan el uso de sentencias condicionales e iterativas en diferentes modalidades.
 
-Este compilado contiene tres proyectos que contemplan el uso de distintas propiedades
- que las estructuras de datos tienen para resolver problemáticas.
- 
-## 1- conversiones.py
+1- Conversión de divisas
+Este programa realiza la conversión de un monto en pesos chilenos a otras tres divisas ingresadas como argumentos.
 
-Se crea un archivo conversiones.py y una estructura de datos apropiada que permita
- ingresar tasas de conversión. Las distintas tasas de conversión se deben ingresar
- mediante sys.argv en el siguiente orden: Sol, Peso Argentino, Dólar Americano.
- 
-### Descripción
+Descripción
+El programa realiza los siguientes pasos:
 
+Solicita al usuario las tasas de conversión para Sol peruano, Peso argentino y Dólar americano como argumentos del programa.
+Recibe también un cuarto argumento que es el monto en pesos chilenos a convertir.
+Realiza la conversión del monto en pesos chilenos a cada una de las divisas utilizando las tasas de conversión ingresadas.
+Muestra el monto convertido en cada una de las tres divisas.
+2- Análisis de texto
+Este proyecto analiza un archivo de texto y cuenta la cantidad de caracteres y palabras distintas.
 
- Para ello considere las siguientes tasas de conversión de Peso Chileno:
- ● aSolperuano: 0.0046
- ● aPesoArgentino: 0.093
- ● aDólarAmericano: 0.00013
- Además ingrese un 4to argumento que sea el valor en peso chileno a convertir. El programa
- debe devolver el valor en peso chileno convertido en las 3 divisas ingresadas.
- Al ejecutar el programa se espera el siguiente output:
- python conversiones.py 0.0046 0.093 0.0013 10000
- Respuesta esperada:
- Los 10000 pesos equivalen a:
- 46.0 Soles
- 930.0 Pesos Argentinos
- 13.0 Dólares
+Descripción
+El usuario debe proporcionar un archivo de texto.
+El programa cuenta el número total de caracteres distintos que aparecen en el texto.
+Cuenta también el número de palabras distintas que componen el texto.
+Muestra el resultado con el número de caracteres y palabras distintas.
+3- Gestión de recordatorios
+Este programa gestiona una lista de recordatorios con fechas y descripciones, permitiendo la adición, edición y eliminación de eventos.
 
-
-## 2-  word_count.py
-
-Este proyecto tiene la funcionalidad de analizar texto lorem ipsum, el cual es un texto de prueba que se utiliza para demostrar distintas
- tipografías además de usarse para rellenar espacios que requieran largos textos
-
-### Descripcion
-
- ● Cuenta el número de palabras distintas que componen el texto ingresado.
- Para separar un texto por espacios utiliza el método .split("").
- 
- Para importar texto en python adapta el siguiente código:
- with open(“texto.txt”, "r") as file:
- texto=file.read()
- donde “texto.txt” corresponde a la ruta del archivo a importar.
- 
- Para comprobar el correcto funcionamiento del código se provee el archivo lorem_ipsum.txt.
- Para ejecutar el programa se utiliza a el siguiente output.
- 
- python word_count.py lorem_ipsum.txt
- 
- Respuesta esperada:
- El número de caracteres distintos es: 40
- El número de palabras distintas es: 243
- 
-## recordatorios.py  
-
-Proyecto recordatorios.py incluye una serie de eventos que
- quieren ser recordados. El formato de estos recordatorios son una fecha
- (año-mes-día), una hora y una descripción del evento.
- 
-### Descripcion
-
-Los eventos se editan de tal manera que mantengan su
- orden en el tiempo. codigo se ejecuta de acurdo a lo siguiente:
- 
- 1. Agregua un evento el 2 de Enero de 2021 a las 6 de la mañana para
- “Empezar el Año”.
- 2. Al revisar los eventos, nota un error, ya que el 15 de Julio no es feriado. Se edita
- de tal manera que sea el 16 de Julio.
- 3. Lamentablemente le tocará trabajar el día del trabajo. Se elimina el evento del
- día del trabajo.
- 4. Se agrega una cena deNavidad y de Año Nuevo. Ambas a
- las 22 hrs.
-
- Para ejecutar el programa se requiere el siguiente output:
- python recordatorios.py
- 
--------------Lista final de recordatorios:
-['2021-01-01', '11:00', 'Levantarse y ejercitar']
-['2021-01-02', '06:00', 'Empezar el Año']
-['2021-07-16', '13:00', 'Día del trabajo (corregido)']
-['2021-09-18', '16:00', 'Ramadas']
-['2021-12-24', '22:00', 'Cena de Navidad']
-['2021-12-25', '00:00', 'Navidad']
-['2021-12-31', '22:00', 'Cena de Año Nuevo']
-
-## Prerrequisitos o Dependencias
-
+Descripción
+El programa mantiene una lista de eventos con fechas, horas y descripciones.
+Permite agregar nuevos eventos, modificar la fecha de eventos existentes, y eliminar eventos.
+Garantiza que los eventos se mantengan ordenados cronológicamente después de cualquier modificación.
+Prerrequisitos o Dependencias
 Sistema Operativo Windows, Linux, MacOS
 Lenguaje de programación Python 3.12
 
-## Instalación del Proyecto
+Instalación del Proyecto
+Clonar el repositorio:
 
-Clonar el repositorio
-```bash
+bash
+Copiar código
 git clone git@github.com:vanemn/desafio_modulo3_clase12.git
+Ingresar a la carpeta del proyecto:
+
+bash
+Copiar código
+cd desafio-3-modulo3
+
+Elegir el programa a usar:
+
+conversiones.py
+word_count.py
+recordatorios.py
 
 
-Elegir el programa a usar 
-
-
-## Autor
-
+Autor
 - [Vanessa Morales](https://github.com/vanemn)
 - [Benjamin Pardo](https://github.com/bpardo02)
 - [Andres Gallardo](https://github.com/AndresGallardo95)
