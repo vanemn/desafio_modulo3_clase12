@@ -1,7 +1,8 @@
 # Estructuras de datos y funciones (I)
 
-Este compilado contiene tres proyectos que contemplan el uso de sentencias condicionales e iterativas en diferentes modalidades.
-
+Este compilado contiene tres proyectos que contemplan el uso de distintas propiedades
+ que las estructuras de datos tienen para resolver problemáticas.
+ 
 ## 1- conversiones.py
 
 Se crea un archivo conversiones.py y una estructura de datos apropiada que permita
